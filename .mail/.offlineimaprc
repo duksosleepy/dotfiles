@@ -1,0 +1,46 @@
+
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = Gmail
+maxsyncaccounts = 1
+pythonfile = offlineimap_funcs.py
+
+[Account Gmail]
+localrepository = localG
+remoterepository = remoteG
+autorefresh = 5
+holdconnectionopen = true
+keepalive = 60
+maildir-windows-compatible = yes
+
+[Repository localG]
+type = GmailMaildir
+localfolders = ~/.mail/G
+#startdate
+[Repository remoteG]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = abc
+remoteport = 993
+remotepass = abc
+ssl = yes
+#auth_mechanisms = XOAUTH2
+#oauth2_request_url =
+#oauth2_client_id =
+#oauth2_client_secret = 
+#oauth2_access_token_eval = get_gmail_token()
+#oauth2_refresh_token_eval = get_gmail_refresh_token()
+#Notice !!! Use above lines when turn off specific password app# 
+sync_deletes = yes
+readonly = True
+folderfilter = lambda foldername: foldername in ['INBOX','[Gmail]/Sent Mail', '[Gmail]/All Mail', '[Gmail]/Drafts', '[Gmail]/Starred']
+#['Trash', 'Spam', 'Junk', 'All Mail', '[Gmail]/All Mail', '[Gmail]/Spam', '[Gmail]/Trash', '[Gmail]/Junk']
+nametrans = lambda foldername: re.sub ('^\[Gmail\]', '',
+                               re.sub ('.Sent Mail', 'Sent',
+			       re.sub ('.All Mail', 'All',
+			       re.sub ('.Drafts', 'Drafts',
+			       re.sub ('.Starred', 'Starred', foldername)))))
+#sslcacertfile = ~/cert.cer   .crt file
+cert_fingerprint = 3f27458489fcb3e7c48fb262cd72b22af99b1700d79145ac27ce1ade153f1d964259257b560efbb3b7e949b67bc111bfadc06f2fefff695294d2b4d07f3a45cb
