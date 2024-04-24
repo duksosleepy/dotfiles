@@ -1,0 +1,106 @@
+import = ["C:/Users/Khoi Nguyen/AppData/Roaming/alacritty/rose-pine.toml"]
+#import = ["catppuccin-mocha.toml"]
+
+shell = '"pwsh.exe" -WorkingDirectory ~'
+#"C:\Program Files\Alacritty\alacritty.exe" -e pwsh.exe
+
+live_config_reload = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_timeout = 0
+unfocused_hollow = true
+thickness = 0.25
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+bindings = [
+{ mouse = "Right", action = "PasteSelection" },
+]
+hide_when_typing = true
+
+[env]
+term = "xterm-256color"
+
+[font]
+normal                = { family = "JetBrainsMono NFM", style = "Medium" }
+bold                  = { family = "JetBrainsMono NFM", style = "Bold" }
+italic                = { family = "JetBrainsMono NFM", style = "Italic" }
+bold_italic           = { family = "JetBrainsMono NFM", style = "Bold Italic" }
+size                  = 9
+offset                = { x = 0, y = 1 }
+glyph_offset          = { x = 0, y = 0 }
+builtin_box_drawing   = true
+
+[[keyboard.bindings]] # Control + V = Paste
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[[keyboard.bindings]] # Control + C = Copya
+action = "Copy"
+key = "C"
+mods = "Control"
+
+[[keyboard.bindings]] # Control + "+" = Increase Font Size
+action = "IncreaseFontSize"
+key = "NumpadAdd"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "NumpadSubtract"
+mods = "Control"
+
+[[keyboard.bindings]] # Control + N = Create a new instance.
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "W"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "{"
+key = "F1"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "}"
+key = "F2"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "#"
+key = "F3"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "~"
+key = "F4"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "@"
+key = "F5"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "|"
+key = "F6"
+mods = "Control"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+padding = { x = 10, y = 5 }
+decorations = "Full" # Neither borders nor title bar.
+opacity = 0.9 # Background opacity as a floating point number from 0.0 to 1.0.
+startup_mode = "Maximized" # Startup mode, regular windows
+title = "duk@shell"
