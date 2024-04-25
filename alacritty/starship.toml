@@ -1,0 +1,49 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Disable the AWS module.
+[aws]
+disabled = true
+
+# Disable the GCP module.
+[gcloud]
+disabled = true
+
+# Set the time format
+[time]
+disabled = false
+time_format = "%R"
+utc_time_offset = "+7"
+
+# Directory setttings
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 4
+truncate_to_repo = false
+truncation_symbol = "…/"
+
+[username]
+disabled = true
+
+[hostname]
+ssh_only = false
+format =  '[\[$hostname\]](bold red) [•](bold green) '
+
+# Workaround for slow prompt with git status
+[git_status]
+disabled = true
+
+[python]
+format = '[\[py ${pyenv_prefix}(${version})(\($virtualenv\))\]]($style) '
+version_format = "v${major}(.${minor})"
+detect_extensions = []
+style = "bold yellow"
+
