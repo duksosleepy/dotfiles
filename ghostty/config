@@ -1,13 +1,53 @@
 theme = ChallengerDeep
+font-family = JetBrainsMono NFM
 font-style = Medium
 font-style-bold = Bold
 font-style-italic = Medium Italic
 font-style-bold-italic = Bold Italic
+
+
 shell-integration = bash
 window-subtitle = working-directory
 window-theme = dark
 background-opacity = 0.9
 window-decoration = true
 mouse-hide-while-typing = true
+scrollback-limit = 1000000
+window-save-state = always
+
+
+cursor-style = block
+clipboard-paste-protection = true
+cursor-click-to-move = true
+mouse-scroll-multiplier = 3
+unfocused-split-opacity = 0.55
+unfocused-split-fill = 000000
+split-divider-color = a9a9a9
+
+
+wait-after-command = true
+window-padding-x = 5
+window-padding-y = 5
+window-padding-balance = true
+window-inherit-working-directory = false
+window-colorspace = display-p3
+
+
+shell-integration-features = sudo,title,no-cursor
+
+
+keybind = ctrl+n=new_window
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+a>h=new_split:left
+keybind = ctrl+a>j=new_split:down
+keybind = ctrl+a>k=new_split:up
+keybind = ctrl+a>l=new_split:right
+keybind = ctrl+a>f=toggle_split_zoom
+keybind = ctrl+a>n=next_tab
+keybind = ctrl+a>p=previous_tab
+keybind = super+r=reload_config
 keybind = performable:ctrl+c=copy_to_clipboard
 keybind = performable:ctrl+v=paste_from_clipboard
