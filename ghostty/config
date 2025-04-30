@@ -1,0 +1,12 @@
+theme = ChallengerDeep
+font-family = IosevkaTreeLig Nerd Font
+font-style = Medium
+font-style-bold = Bold
+font-style-italic = Medium Italic
+font-style-bold-italic = Bold Italic
+shell-integration = bash
+window-subtitle = working-directory
+window-theme = dark
+background-opacity = 0.9
+window-decoration = true
+mouse-hide-while-typing = true
