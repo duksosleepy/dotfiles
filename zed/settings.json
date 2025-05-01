@@ -1,0 +1,156 @@
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "theme": "Ayu Dark",
+  "ui_font_family": "Inter",
+  "ui_font_size": 14,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 15,
+  "tab_size": 2,
+  "show_whitespaces": "selection",
+  "soft_wrap": "editor_width",
+  "show_wrap_guides": true,
+  "wrap_guides": [80],
+  "tabs": {
+    "git_status": true
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "project_panel": {
+    "default_width": 120,
+    "dock": "left",
+    "indent_size": 10
+  },
+  "experimental.theme_overrides": {
+    "editor.foreground": "#e6e5e5",
+    "editor.background": "#0d0d0d",
+    "editor.wrap_guide": "#262626",
+    "syntax": {
+      "variable": {
+        "color": "#dedcdc"
+      },
+      "constant": {
+        "color": "#e6e5e5"
+      },
+      "type": {
+        "color": "#debac7"
+      },
+      "variable.special": {
+        "color": "#e6e5e5"
+      },
+      "function": {
+        "color": "#f2e373"
+      },
+      "keyword": {
+        "color": "#ec6262"
+      },
+      "comment": {
+        "color": "#ffcc80"
+      }
+    },
+    "error": "#ff8566",
+    "warning": "#ffd699",
+    "info": "#e6e5e5"
+  },
+  "language_overrides": {
+    "JSON": {
+      "format_on_save": "off"
+    },
+    "TypeScript": {
+      "format_on_save": "off"
+    },
+    "JavaScript": {
+      "format_on_save": "off"
+    },
+    "TSX": {
+      "format_on_save": "off"
+    },
+    "Markdown": {
+      "show_whitespaces": "all"
+    },
+    "YAML": {
+      "show_whitespaces": "all"
+    },
+    "HTML": {
+      "show_whitespaces": "all"
+    },
+    "Python": {
+      "show_whitespaces": "all"
+    }
+  },
+  "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "language_servers": ["pyright", "ruff"]
+    },
+    "ERB": {
+      "formatter": [
+        {
+          "external": {
+            "command": "$PATH_TO_FORMATTER/erb-lint-formatter",
+            "arguments": ["{buffer_path}"]
+          }
+        }
+      ]
+    },
+    "Elixir": {
+      "language_servers": ["elixir-ls", "tailwindcss-language-server"]
+    },
+    "HEEX": {
+      "language_servers": [
+        "elixir-ls",
+        "tailwindcss-language-server",
+        "emmet-language-server"
+      ]
+    }
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "configuration": "ruff.toml"
+        }
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    },
+    "rust-analyzer": {
+      "binary": {
+        "path": "/.cargo/bin/rust-analyzer"
+      },
+      "initialization_options": {
+        "check": {
+          "command": "check"
+        }
+      }
+    },
+    "elixir-ls": {
+      "settings": {
+        "dialyzerEnabled": false
+      }
+    }
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "font_family": "JetBrainsMono Nerd Font",
+    "toolbar": {
+      "title": true
+    },
+    "working_directory": "current_project_directory"
+  }
+}
