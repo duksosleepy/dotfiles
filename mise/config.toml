@@ -1,0 +1,84 @@
+[env]
+EDITOR = 'codium --wait'
+MISE_ACTIVE = 'true' 
+
+[settings]
+activate_aggressive = true
+auto_install = true
+color = true
+env_file = '.env'
+experimental = true
+jobs = 4
+not_found_auto_install = true
+status = { show_env = true, show_tools = true, missing_tools = 'always' }
+task_run_auto_install = true
+use_versions_host = true
+verbose = false
+
+[settings.cargo]
+binstall = true
+
+[settings.node]
+gpg_verify = true
+
+[settings.pipx]
+uvx = true
+
+[settings.python]
+uv_venv_auto = true
+
+[tools]
+# Core language runtimes
+erlang = "latest"
+ghc = "9.12.2"
+node = "latest"
+python = { version = 'latest' }
+ruby = "latest"
+rust = "latest"
+zig = "latest"
+elixir = "latest"
+uv = "latest"
+pipx = "latest"
+"aqua:biomejs/biome" = "latest"
+"pipx:pyright" = "latest"
+"aqua:cloudflare/cloudflared" = "latest"
+"ubi:clj-kondo/clj-kondo" = "latest"
+"ubi:twpayne/chezmoi" = "latest"
+"asdf:mise-plugins/mise-lein" = "latest"
+"aqua:pre-commit/pre-commit" = "latest"
+"aqua:astral-sh/ruff" = "latest"
+sbcl = "latest"
+usage = "latest"
+# Python tools
+# 'pipx:autopep8' = { version = 'latest' }
+# 'pipx:black' = { version = 'latest' }
+# 'pipx:flake8' = { version = 'latest' }
+# 'pipx:isort' = { version = 'latest' }
+# 'pipx:mypy' = { version = 'latest' }
+# 'pipx:pylint' = { version = 'latest' }
+# 'pipx:pyright' = { version = 'latest' }
+# pipx = { version = 'latest' }
+# uv = { version = 'latest' }
+# Ruby tools
+# 'gem:bundler' = { version = 'latest' }
+# 'gem:rubocop' = { version = 'latest' }
+# 'gem:standard' = { version = 'latest' }
+# 'gem:rails' = { version = 'latest' }
+# 'gem:rubocop-rspec' = { version = 'latest' }
+# 'gem:rubyfmt' = { version = 'latest' }
+# 'gem:solargraph' = { version = 'latest' }
+# 'gem:syntax_tree' = { version = 'latest' }
+# 'gem:yard' = { version = 'latest' }
+# Rust tools
+# 'cargo:bat' = { version = 'latest' }
+# 'cargo:cargo-edit' = { version = 'latest' }
+# 'cargo:cargo-watch' = { version = 'latest' }
+# 'cargo:fd-find' = { version = 'latest' }
+# 'cargo:git-delta' = { version = 'latest' }
+# 'cargo:ripgrep' = { version = 'latest' }
+# cargo-binstall = { version = 'latest' }
+# Node.js tools
+# 'npm:prettier' = { version = 'latest' }
+# 'npm:http-server' = { version = 'latest' }
+# General development tools
+# fzf = { version = 'latest' }
