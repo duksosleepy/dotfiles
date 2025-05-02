@@ -3,11 +3,27 @@
     "diagnostics": false,
     "metrics": false
   },
+  "terminal": {
+    "shell": {
+      "with_arguments": {
+        "program": "/usr/bin/fish",
+        "args": ["--login", "--interactive"]
+      }
+    },
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "font_family": "JetBrainsMono Nerd Font",
+    "toolbar": {
+      "title": true
+    },
+    "working_directory": "current_project_directory"
+  },
   "theme": "Ayu Dark",
   "ui_font_family": "Inter",
-  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "ui_font_size": 25,
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 15,
   "tab_size": 2,
   "show_whitespaces": "selection",
   "soft_wrap": "editor_width",
@@ -15,6 +31,11 @@
   "wrap_guides": [80],
   "tabs": {
     "git_status": true
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "JetBrains New UI Icons (Light)",
+    "dark": "JetBrains New UI Icons (Dark)"
   },
   "inlay_hints": {
     "enabled": true,
@@ -142,15 +163,5 @@
         "dialyzerEnabled": false
       }
     }
-  },
-  "terminal": {
-    "alternate_scroll": "off",
-    "blinking": "terminal_controlled",
-    "copy_on_select": true,
-    "font_family": "JetBrainsMono Nerd Font",
-    "toolbar": {
-      "title": true
-    },
-    "working_directory": "current_project_directory"
   }
 }
