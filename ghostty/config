@@ -1,6 +1,8 @@
+command = /usr/bin/fish --login --interactive
+
 # Interface and font
 theme = ChallengerDeep
-font-family = JetBrainsMono NFM
+font-family = Iosevka SS14 Extended
 font-style = Medium
 font-style-bold = Bold
 font-style-italic = Medium Italic
@@ -30,13 +32,13 @@ mouse-hide-while-typing = true
 mouse-scroll-multiplier = 3
 
 # Shell and integration
-shell-integration = bash
+shell-integration = fish
 shell-integration-features = sudo,title,no-cursor
 wait-after-command = true
 scrollback-limit = 1000000
+term = xterm-256color
 
 # Clipboard
-copy-on-select = clipboard
 clipboard-paste-protection = true
 
 # Keybindings - Window and configuration
