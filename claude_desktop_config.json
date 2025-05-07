@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "gh_token"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://localhost/"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/khoi",
+        "/root/"
+      ]
+    },
+    "canva": {
+      "command": "npx",
+      "args": ["-y", "@canva/cli@latest", "mcp"]
+    },
+    "cloudflare-docs": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://docs.mcp.cloudflare.com/sse"]
+    },
+    "sentry": {
+      "command": "/home/khoi/.local/share/mise/installs/uv/0.7.2/uv-x86_64-unknown-linux-musl/uvx",
+      "args": [
+        "mcp-server-sentry",
+        "--auth-token",
+        "sentry_token"
+      ]
+    },
+    "fetch": {
+      "command": "/home/khoi/.local/share/mise/installs/uv/0.7.2/uv-x86_64-unknown-linux-musl/uvx",
+      "args": ["mcp-server-fetch", "--ignore-robots-txt"]
+    },
+    "mcp-hfspace": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@llmindset/mcp-hfspace",
+        "shuttleai/shuttle-jaguar",
+        "styletts2/styletts2",
+        "Qwen/QVQ-72B-preview"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    }
+  }
+}
